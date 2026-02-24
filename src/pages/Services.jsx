@@ -10,6 +10,7 @@ function Services() {
       id: 'standard',
       title: 'Standard Cleaning',
       icon: '🏠',
+      image: '/images/services/20668.jpg',
       tagline: 'Consistent Maintenance for Everyday Cleanliness',
       description: 'Designed to keep your home or office consistently clean, fresh and organised. Focuses on high-traffic areas and commonly used surfaces to maintain a healthy, tidy environment. Ideal for weekly, bi-weekly or monthly upkeep.',
       price: 'From £25/hour',
@@ -47,6 +48,7 @@ function Services() {
       id: 'deep',
       title: 'Deep Cleaning',
       icon: '✨',
+      image: '/images/services/2149345523.jpg',
       tagline: 'Comprehensive Top-to-Bottom Sanitization',
       description: 'Detailed cleaning service that goes far beyond regular maintenance. Targets built-up dirt, grime, bacteria, and hidden dust in areas that aren\'t cleaned daily or weekly. Perfect for seasonal refreshes or special occasions.',
       price: 'From £35/hour',
@@ -84,6 +86,7 @@ function Services() {
       id: 'move',
       title: 'Move-In/Move-Out Cleaning',
       icon: '📦',
+      image: '/images/services/2149345535.jpg',
       tagline: 'Property Transition Perfection',
       description: 'Detailed top-to-bottom service designed to prepare a property for its next chapter. Ensures the space is spotless, sanitized and ready for new occupants. Essential for landlords, tenants, and property managers.',
       price: 'Custom Quote',
@@ -121,6 +124,7 @@ function Services() {
       id: 'upholstery',
       title: 'Upholstery Cleaning',
       icon: '🛋️',
+      image: '/images/services/2150359024.jpg',
       tagline: 'Professional Fabric Care & Restoration',
       description: 'Professional cleaning for all types of upholstered furniture to keep them fresh, extend their lifespan, and maintain a healthy indoor environment. Safe for all fabric types.',
       price: 'From £45/item',
@@ -169,9 +173,16 @@ function Services() {
         <div className="container">
           {services.map((service, index) => (
             <div key={service.id} className={`service-detail ${activeService === index ? 'active' : ''}`}>
+              {/* Service Image Hero */}
+              <div className="service-image-hero">
+                <img src={service.image} alt={service.title} className="service-hero-img" />
+                <div className="service-image-overlay">
+                  <div className="service-icon-large">{service.icon}</div>
+                </div>
+              </div>
+
               <div className="service-header">
                 <div className="service-header-left">
-                  <div className="service-icon-large">{service.icon}</div>
                   <div>
                     <div className="service-title-group">
                       <h2>{service.title}</h2>
