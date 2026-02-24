@@ -88,21 +88,29 @@
   font-size: 1.5rem;
 }
 
-/* Service Detail Cards */
+/* Service Detail Cards - Side by Side Layout */
 .services-section {
   padding: 80px 0;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin-bottom: 3rem;
 }
 
 .service-detail {
   background: var(--white);
   border-radius: 30px;
   padding: 0;
-  margin-bottom: 3rem;
   box-shadow: 0 15px 60px rgba(0, 0, 0, 0.1);
   border: 2px solid rgba(74, 144, 226, 0.1);
   transition: all 0.4s ease;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .service-detail::before {
@@ -124,8 +132,8 @@
 }
 
 .service-detail:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 70px rgba(74, 144, 226, 0.15);
+  transform: translateY(-10px);
+  box-shadow: 0 25px 80px rgba(74, 144, 226, 0.2);
 }
 
 /* Service Image Hero */
@@ -637,6 +645,11 @@
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  
   .service-header {
     flex-direction: column;
   }
@@ -651,6 +664,11 @@
 }
 
 @media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
   .services-hero {
     padding: 60px 0 40px;
   }
