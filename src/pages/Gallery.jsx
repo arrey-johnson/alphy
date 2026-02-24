@@ -12,7 +12,7 @@ function Gallery() {
     { id: 'commercial', name: 'Commercial', icon: '🏭' }
   ]
 
-  // Placeholder gallery items - replace with real images when available
+  // Gallery items with real project photos
   const galleryItems = [
     { id: 1, category: 'office', title: 'Corporate Office - Before & After', image: '/images/services/2148112715.jpg', description: 'Complete office deep clean' },
     { id: 2, category: 'residential', title: 'Luxury Home Cleaning', image: '/images/services/20668.jpg', description: 'Premium residential service' },
@@ -21,7 +21,12 @@ function Gallery() {
     { id: 5, category: 'office', title: 'Meeting Room Refresh', image: '/images/services/2150359024.jpg', description: 'Conference room detailing' },
     { id: 6, category: 'residential', title: 'Move-Out Cleaning', image: '/images/services/2150520639.jpg', description: 'End of tenancy clean' },
     { id: 7, category: 'deep', title: 'Bathroom Restoration', image: '/images/services/2151340149.jpg', description: 'Deep bathroom cleaning' },
-    { id: 8, category: 'commercial', title: 'Warehouse Cleaning', image: '/images/services/21780.jpg', description: 'Industrial space cleaning' }
+    { id: 8, category: 'commercial', title: 'Warehouse Cleaning', image: '/images/services/21780.jpg', description: 'Industrial space cleaning' },
+    { id: 9, category: 'office', title: 'Professional Office Space', image: '/images/WhatsApp Image 2026-02-23 at 11.39.53.jpeg', description: 'Spotless office environment' },
+    { id: 10, category: 'commercial', title: 'Commercial Property Clean', image: '/images/WhatsApp Image 2026-02-23 at 11.39.55.jpeg', description: 'Complete commercial cleaning' },
+    { id: 11, category: 'residential', title: 'Residential Deep Clean', image: '/images/WhatsApp Image 2026-02-23 at 11.39.56.jpeg', description: 'Thorough home cleaning service' },
+    { id: 12, category: 'deep', title: 'Detailed Cleaning Project', image: '/images/WhatsApp Image 2026-02-23 at 11.39.57.jpeg', description: 'Meticulous deep cleaning' },
+    { id: 13, category: 'office', title: 'Office Transformation', image: '/images/WhatsApp Image 2026-02-23 at 11.39.58.jpeg', description: 'Professional workspace cleaning' }
   ]
 
   const filteredItems = selectedCategory === 'all' 
@@ -72,13 +77,14 @@ function Gallery() {
             ))}
           </div>
 
-          {/* Coming Soon Notice */}
+          {/* More Photos Notice */}
           <div className="gallery-notice">
             <div className="notice-icon">📸</div>
-            <h3>More Photos Coming Soon!</h3>
+            <h3>Real Projects, Real Results</h3>
             <p>
-              We're currently collecting professional before-and-after photos of our recent projects. 
-              Check back soon to see more examples of our exceptional cleaning services.
+              These are actual photos from our recent cleaning projects. 
+              We continuously update our gallery with new before-and-after transformations. 
+              Follow us on social media to see our latest work!
             </p>
           </div>
 
