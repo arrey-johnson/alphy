@@ -249,28 +249,91 @@
 }
 
 /* Footer CTA Button */
+.footer-cta-column {
+  background: linear-gradient(135deg, rgba(74, 144, 226, 0.1), rgba(76, 175, 80, 0.1));
+  padding: 1.5rem;
+  border-radius: 16px;
+  border: 1px solid rgba(74, 144, 226, 0.2);
+  backdrop-filter: blur(10px);
+}
+
 .footer-cta {
   margin-top: 1.5rem;
 }
 
-.footer-btn {
-  display: inline-block;
-  padding: 0.9rem 1.8rem;
-  background: linear-gradient(135deg, var(--sky-blue), var(--green));
-  color: var(--white);
-  text-decoration: none;
-  border-radius: 50px;
+.footer-cta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #FFD700, #FFA500);
+  color: #000;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
   font-weight: 700;
-  font-size: 0.95rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 6px 20px rgba(74, 144, 226, 0.3);
-  position: relative;
-  overflow: hidden;
+  margin-bottom: 1rem;
+  animation: pulse-glow 2s ease-in-out infinite;
 }
 
-.footer-btn::before {
+.cta-badge-icon {
+  font-size: 1rem;
+  animation: flash 1.5s ease-in-out infinite;
+}
+
+@keyframes flash {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.footer-cta-title {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.footer-cta-text {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.4;
+}
+
+.footer-cta-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.footer-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  border: 2px solid transparent;
+}
+
+.footer-btn.primary {
+  background: linear-gradient(135deg, var(--sky-blue), var(--green));
+  color: var(--white);
+  box-shadow: 0 8px 24px rgba(74, 144, 226, 0.4);
+}
+
+.footer-btn.primary::before {
   content: '';
   position: absolute;
   top: 0;
@@ -278,16 +341,80 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-  transition: left 0.6s;
+  transition: left 0.5s;
 }
 
-.footer-btn:hover::before {
+.footer-btn.primary:hover::before {
   left: 100%;
 }
 
-.footer-btn:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 10px 30px rgba(74, 144, 226, 0.5);
+.footer-btn.primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(74, 144, 226, 0.5);
+}
+
+.footer-btn.secondary {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--white);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.footer-btn.secondary:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+.btn-icon {
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.btn-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
+  flex: 1;
+}
+
+.btn-main {
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.btn-sub {
+  font-size: 0.7rem;
+  font-weight: 500;
+  opacity: 0.9;
+  text-transform: none;
+  letter-spacing: 0.3px;
+}
+
+.btn-text {
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.btn-arrow {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.footer-btn.primary:hover .btn-arrow {
+  transform: translateX(5px);
+}
+
+.footer-btn.primary:hover::before {
+  left: 100%;
+}
+
+.footer-btn.primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(74, 144, 226, 0.5);
 }
 
 /* Footer Social Section */
@@ -494,8 +621,28 @@
     text-align: left;
   }
   
+  .footer-cta-column {
+    text-align: center;
+  }
+  
   .footer-cta {
     text-align: center;
+  }
+  
+  .footer-cta-badge {
+    display: inline-flex;
+  }
+  
+  .footer-cta-title {
+    font-size: 1.1rem;
+  }
+  
+  .footer-cta-buttons {
+    align-items: stretch;
+  }
+  
+  .footer-btn {
+    width: 100%;
   }
   
   .footer-social {

@@ -92,7 +92,7 @@ function Footer() {
               </ul>
             </div>
 
-            <div className="footer-column">
+            <div className="footer-column footer-cta-column">
               <h4>Areas We Cover</h4>
               <ul>
                 <li>West Midlands</li>
@@ -102,7 +102,26 @@ function Footer() {
                 <li>Northamptonshire</li>
               </ul>
               <div className="footer-cta">
-                <Link to="/contact" className="footer-btn">Get a Free Quote</Link>
+                <div className="footer-cta-badge">
+                  <span className="cta-badge-icon">⚡</span>
+                  <span>Same-Day Response</span>
+                </div>
+                <h5 className="footer-cta-title">Ready to Get Started?</h5>
+                <p className="footer-cta-text">Free site assessment • No obligation quote</p>
+                <div className="footer-cta-buttons">
+                  <Link to="/contact" className="footer-btn primary">
+                    <span className="btn-icon">📋</span>
+                    <span className="btn-content">
+                      <span className="btn-main">GET FREE QUOTE</span>
+                      <span className="btn-sub">Response in 2 hours</span>
+                    </span>
+                    <span className="btn-arrow">→</span>
+                  </Link>
+                  <a href="tel:01902239420" className="footer-btn secondary">
+                    <span className="btn-icon">📞</span>
+                    <span className="btn-text">CALL NOW</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
