@@ -440,22 +440,36 @@ function Home() {
 
       <section className="section stats-section">
         <div className="container">
-          <div className="stats-grid">
-            <div className="stat-card">
-              <div className="stat-number">500+</div>
-              <div className="stat-label">Happy Customers</div>
+          <div className="stats-wrapper">
+            <div className="stats-header">
+              <h2 className="stats-title">Growing Business, Proven Results</h2>
+              <p className="stats-subtitle">Real numbers from our journey so far</p>
             </div>
-            <div className="stat-card">
-              <div className="stat-number">5★</div>
-              <div className="stat-label">Average Rating</div>
-            </div>
-            <div className="stat-card">
-              <div className="stat-number">7</div>
-              <div className="stat-label">Days a Week</div>
-            </div>
-            <div className="stat-card">
-              <div className="stat-number">100%</div>
-              <div className="stat-label">Satisfaction Guaranteed</div>
+            <div className="stats-grid">
+              <div className="stat-card">
+                <div className="stat-icon">👥</div>
+                <div className="stat-number">50+</div>
+                <div className="stat-label">Satisfied Clients</div>
+                <div className="stat-description">And growing every month</div>
+              </div>
+              <div className="stat-card">
+                <div className="stat-icon">⭐</div>
+                <div className="stat-number">4.9★</div>
+                <div className="stat-label">Google Rating</div>
+                <div className="stat-description">Based on verified reviews</div>
+              </div>
+              <div className="stat-card">
+                <div className="stat-icon">🏢</div>
+                <div className="stat-number">200+</div>
+                <div className="stat-label">Projects Completed</div>
+                <div className="stat-description">Residential & commercial</div>
+              </div>
+              <div className="stat-card">
+                <div className="stat-icon">✓</div>
+                <div className="stat-number">100%</div>
+                <div className="stat-label">Satisfaction Guarantee</div>
+                <div className="stat-description">We stand behind our work</div>
+              </div>
             </div>
           </div>
         </div>
