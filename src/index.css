@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --sky-blue: #4A90E2;
+  --pink: #FF6B9D;
+  --green: #4CAF50;
+  --white: #FFFFFF;
+  --dark: #2C3E50;
+  --gray: #7F8C8D;
+  --light-gray: #F8F9FA;
+  --accent: #FFD700;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--dark);
+  line-height: 1.7;
+  background-color: var(--white);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--sky-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 14px 35px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--sky-blue), var(--green));
+  color: var(--white);
+  box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(74, 144, 226, 0.4);
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.section-alt {
+  background-color: var(--light-gray);
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.section-alt {
+  background-color: var(--light-gray);
+}
+
+/* Enhanced Global Responsive Design */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 95%;
+    padding: 0 20px;
+  }
+  
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.8rem; }
+  h3 { font-size: 1.4rem; }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.25rem; }
+  
+  .section {
+    padding: 50px 0;
+  }
+  
+  button {
+    padding: 12px 25px;
+    font-size: 0.9rem;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 12px;
+  }
+  
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.4rem; }
+  h3 { font-size: 1.2rem; }
+  
+  .section {
+    padding: 40px 0;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  /* Touch-friendly tap targets */
+  a, button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+
+.section {
+  padding: 80px 0;
+}
+
+.section-alt {
+  background-color: var(--light-gray);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background-color: var(--sky-blue);
+  color: var(--white);
+}
+
+/* Loading animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.app {
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* Accessibility improvements */
+a:focus,
+button:focus {
+  outline: 3px solid var(--sky-blue);
+  outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+  .header,
+  .footer,
+  button {
+    display: none;
+  }
+}

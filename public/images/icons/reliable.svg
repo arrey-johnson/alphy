@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="reliableGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4CAF50;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <circle fill="url(#reliableGrad)" opacity="0.2" cx="100" cy="100" r="90"/>
+  <circle fill="none" stroke="url(#reliableGrad)" stroke-width="8" cx="100" cy="100" r="70"/>
+  <path fill="url(#reliableGrad)" d="M100,40 L120,80 L165,85 L130,115 L140,160 L100,135 L60,160 L70,115 L35,85 L80,80 Z"/>
+  <circle fill="#FFD700" cx="100" cy="100" r="15">
+    <animate attributeName="r" values="15;18;15" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="moveGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B9D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF8FAB;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="overlayGrad4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#000;stop-opacity:0" />
+      <stop offset="100%" style="stop-color:#000;stop-opacity:0.6" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect fill="url(#moveGrad)" width="800" height="600"/>
+  
+  <!-- Moving boxes -->
+  <rect fill="#8B4513" opacity="0.9" x="200" y="250" width="120" height="120" rx="5"/>
+  <rect fill="#A0522D" opacity="0.8" x="200" y="250" width="120" height="40" rx="5"/>
+  <path fill="#654321" opacity="0.7" d="M200,290 L320,290 L320,370 L200,370 Z"/>
+  
+  <rect fill="#8B4513" opacity="0.9" x="340" y="200" width="140" height="140" rx="5"/>
+  <rect fill="#A0522D" opacity="0.8" x="340" y="200" width="140" height="45" rx="5"/>
+  
+  <rect fill="#8B4513" opacity="0.9" x="500" y="280" width="100" height="100" rx="5"/>
+  <rect fill="#A0522D" opacity="0.8" x="500" y="280" width="100" height="35" rx="5"/>
+  
+  <!-- Tape on boxes -->
+  <rect fill="#FFD700" opacity="0.6" x="250" y="250" width="20" height="120"/>
+  <rect fill="#FFD700" opacity="0.6" x="390" y="200" width="20" height="140"/>
+  <rect fill="#FFD700" opacity="0.6" x="540" y="280" width="20" height="100"/>
+  
+  <!-- Key -->
+  <circle fill="#FFD700" opacity="0.9" cx="400" cy="450" r="25"/>
+  <rect fill="#FFD700" opacity="0.9" x="400" y="450" width="80" height="15" rx="3"/>
+  <rect fill="#FFD700" opacity="0.9" x="460" y="440" width="10" height="15"/>
+  <rect fill="#FFD700" opacity="0.9" x="460" y="455" width="10" height="15"/>
+  
+  <!-- Sparkles -->
+  <circle fill="#fff" cx="300" cy="180" r="8" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;1;0.9" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle fill="#fff" cx="450" cy="150" r="6" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;1;0.9" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle fill="#fff" cx="550" cy="200" r="7" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;1;0.9" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Overlay gradient -->
+  <rect fill="url(#overlayGrad4)" width="800" height="600"/>
+</svg>

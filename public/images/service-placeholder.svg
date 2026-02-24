@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F8F9FA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E9ECEF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect fill="url(#bgGrad)" width="400" height="300"/>
+  <circle fill="#4A90E2" opacity="0.2" cx="100" cy="100" r="60"/>
+  <circle fill="#4CAF50" opacity="0.2" cx="300" cy="200" r="80"/>
+  <path fill="#4A90E2" opacity="0.3" d="M150,120 L180,100 L180,180 L150,200 Z"/>
+  <circle fill="#FF6B9D" opacity="0.3" cx="250" cy="120" r="40"/>
+  <text x="200" y="160" font-family="Arial" font-size="24" fill="#2C3E50" text-anchor="middle" opacity="0.5">Cleaning Service</text>
+</svg>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="recurringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00BCD4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#26C6DA;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="overlayGrad7" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#000;stop-opacity:0" />
+      <stop offset="100%" style="stop-color:#000;stop-opacity:0.6" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect fill="url(#recurringGrad)" width="800" height="600"/>
+  
+  <!-- Calendar -->
+  <rect fill="#fff" opacity="0.95" x="200" y="150" width="400" height="350" rx="15"/>
+  <rect fill="#4CAF50" opacity="0.9" x="200" y="150" width="400" height="80" rx="15"/>
+  
+  <!-- Calendar header -->
+  <text x="400" y="205" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#fff" text-anchor="middle">SCHEDULE</text>
+  
+  <!-- Calendar grid -->
+  <g opacity="0.8">
+    <rect fill="#E3F2FD" x="220" y="260" width="80" height="60" rx="5"/>
+    <rect fill="#E3F2FD" x="320" y="260" width="80" height="60" rx="5"/>
+    <rect fill="#E3F2FD" x="420" y="260" width="80" height="60" rx="5"/>
+    <rect fill="#E3F2FD" x="520" y="260" width="80" height="60" rx="5"/>
+    
+    <rect fill="#4CAF50" x="220" y="340" width="80" height="60" rx="5"/>
+    <rect fill="#E3F2FD" x="320" y="340" width="80" height="60" rx="5"/>
+    <rect fill="#E3F2FD" x="420" y="340" width="80" height="60" rx="5"/>
+    <rect fill="#4CAF50" x="520" y="340" width="80" height="60" rx="5"/>
+    
+    <rect fill="#E3F2FD" x="220" y="420" width="80" height="60" rx="5"/>
+    <rect fill="#4CAF50" x="320" y="420" width="80" height="60" rx="5"/>
+    <rect fill="#E3F2FD" x="420" y="420" width="80" height="60" rx="5"/>
+    <rect fill="#E3F2FD" x="520" y="420" width="80" height="60" rx="5"/>
+  </g>
+  
+  <!-- Checkmarks -->
+  <path fill="#fff" d="M240,365 L250,375 L270,350" stroke="#fff" stroke-width="4" opacity="0.9"/>
+  <path fill="#fff" d="M540,365 L550,375 L570,350" stroke="#fff" stroke-width="4" opacity="0.9"/>
+  <path fill="#fff" d="M340,445 L350,455 L370,430" stroke="#fff" stroke-width="4" opacity="0.9"/>
+  
+  <!-- Clock icon -->
+  <circle fill="#FFD700" opacity="0.9" cx="700" cy="150" r="50"/>
+  <circle fill="#fff" opacity="0.3" cx="700" cy="150" r="35"/>
+  <line stroke="#2C3E50" stroke-width="4" x1="700" y1="150" x2="700" y2="130" opacity="0.8"/>
+  <line stroke="#2C3E50" stroke-width="4" x1="700" y1="150" x2="715" y2="150" opacity="0.8"/>
+  
+  <!-- Sparkles -->
+  <circle fill="#FFD700" cx="150" cy="200" r="8" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;1;0.9" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle fill="#FFD700" cx="650" cy="450" r="10" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;1;0.9" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Overlay gradient -->
+  <rect fill="url(#overlayGrad7)" width="800" height="600"/>
+</svg>

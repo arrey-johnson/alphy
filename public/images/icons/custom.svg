@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="customIconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9C27B0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E91E63;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <circle fill="url(#customIconGrad)" opacity="0.2" cx="100" cy="100" r="90"/>
+  <circle fill="none" stroke="url(#customIconGrad)" stroke-width="6" cx="100" cy="100" r="60"/>
+  <circle fill="url(#customIconGrad)" cx="100" cy="40" r="12"/>
+  <circle fill="url(#customIconGrad)" cx="100" cy="160" r="12"/>
+  <circle fill="url(#customIconGrad)" cx="40" cy="100" r="12"/>
+  <circle fill="url(#customIconGrad)" cx="160" cy="100" r="12"/>
+  <circle fill="#FFD700" cx="100" cy="100" r="20">
+    <animate attributeName="r" values="20;25;20" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>
