@@ -55,10 +55,10 @@
   right: 0;
   bottom: 0;
   background: linear-gradient(135deg, 
-    rgba(0, 0, 0, 0.6) 0%, 
-    rgba(0, 0, 0, 0.4) 30%,
-    rgba(0, 0, 0, 0.3) 70%,
-    rgba(0, 0, 0, 0.7) 100%
+    rgba(0, 0, 0, 0.75) 0%, 
+    rgba(0, 0, 0, 0.6) 30%,
+    rgba(0, 0, 0, 0.5) 70%,
+    rgba(0, 0, 0, 0.8) 100%
   );
   pointer-events: none;
   z-index: 1;
@@ -93,37 +93,37 @@
 /* Dynamic overlay colors */
 .slide:nth-child(1) .slide-overlay {
   background: linear-gradient(135deg, 
-    rgba(0, 0, 0, 0.7) 0%, 
-    rgba(74, 144, 226, 0.5) 30%,
-    rgba(76, 175, 80, 0.4) 50%,
-    rgba(0, 0, 0, 0.8) 100%
+    rgba(0, 0, 0, 0.8) 0%, 
+    rgba(74, 144, 226, 0.4) 30%,
+    rgba(76, 175, 80, 0.3) 50%,
+    rgba(0, 0, 0, 0.85) 100%
   );
 }
 
 .slide:nth-child(2) .slide-overlay {
   background: linear-gradient(135deg, 
-    rgba(0, 0, 0, 0.7) 0%, 
-    rgba(76, 175, 80, 0.5) 30%,
-    rgba(255, 193, 7, 0.4) 50%,
-    rgba(0, 0, 0, 0.8) 100%
+    rgba(0, 0, 0, 0.8) 0%, 
+    rgba(76, 175, 80, 0.4) 30%,
+    rgba(255, 193, 7, 0.3) 50%,
+    rgba(0, 0, 0, 0.85) 100%
   );
 }
 
 .slide:nth-child(3) .slide-overlay {
   background: linear-gradient(135deg, 
-    rgba(0, 0, 0, 0.7) 0%, 
-    rgba(255, 107, 157, 0.5) 30%,
-    rgba(74, 144, 226, 0.4) 50%,
-    rgba(0, 0, 0, 0.8) 100%
+    rgba(0, 0, 0, 0.8) 0%, 
+    rgba(255, 107, 157, 0.4) 30%,
+    rgba(74, 144, 226, 0.3) 50%,
+    rgba(0, 0, 0, 0.85) 100%
   );
 }
 
 .slide:nth-child(4) .slide-overlay {
   background: linear-gradient(135deg, 
-    rgba(0, 0, 0, 0.7) 0%, 
-    rgba(156, 39, 176, 0.5) 30%,
-    rgba(233, 30, 99, 0.4) 50%,
-    rgba(0, 0, 0, 0.8) 100%
+    rgba(0, 0, 0, 0.8) 0%, 
+    rgba(156, 39, 176, 0.4) 30%,
+    rgba(233, 30, 99, 0.3) 50%,
+    rgba(0, 0, 0, 0.85) 100%
   );
 }
 
@@ -1140,6 +1140,7 @@
 .service-image-card:hover .service-description {
   transform: translateY(0);
   opacity: 1;
+  color: var(--white);
 }
 
 .service-arrow {
